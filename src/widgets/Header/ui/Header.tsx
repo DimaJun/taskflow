@@ -4,6 +4,7 @@ import s from './Header.module.scss';
 import Link from 'next/link';
 import { Navigation } from './Navigation/Navigation';
 import { navItems } from '../consts/nav-items';
+import { Input } from '@/shared/ui/Input';
 
 export function Header() {
 	return (
@@ -17,7 +18,12 @@ export function Header() {
 				</Link>
 				<Navigation items={navItems} />
 			</div>
-			<div className={s.right}></div>
+			<div className={s.right}>
+				<Input
+					isSearch
+					placeholder='Поиск задач...'
+				/>
+			</div>
 		</header>
 	);
 }
