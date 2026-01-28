@@ -1,3 +1,5 @@
+import { Page } from '@/shared/ui/Page';
+
 export default function Team() {
-	return <div>Team</div>;
+	return <Page>Team</Page>;
 }

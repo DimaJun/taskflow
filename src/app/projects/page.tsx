@@ -1,3 +1,5 @@
+import { Page } from '@/shared/ui/Page';
+
 export default function Projects() {
-	return <div>Projects</div>;
+	return <Page>Projects</Page>;
 }
