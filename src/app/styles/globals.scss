@@ -1,6 +1,12 @@
 @use "reset/reset";
 @use "variables/variables";
 
+* {
+  :focus {
+    outline: 1px solid var(--color-accent);
+  }
+}
+
 .app {
   height: 100vh;
   font-family: var(--font-inter);

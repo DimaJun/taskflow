@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { Navigation } from './Navigation/Navigation';
 import { navItems } from '../consts/nav-items';
 import { Input } from '@/shared/ui/Input';
+import { Users } from 'lucide-react';
+import { Button } from '@/shared/ui/Button';
 
 export function Header() {
 	return (
@@ -23,6 +25,13 @@ export function Header() {
 					isSearch
 					placeholder='Поиск задач...'
 				/>
+				<Button
+					className={s.users}
+					variant='clear'
+				>
+					<Users size={18} />
+				</Button>
+				<Button className={s.avatar}>ВЫ</Button>
 			</div>
 		</header>
 	);

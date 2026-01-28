@@ -11,6 +11,14 @@
   background-color: var(--input-bg);
   padding: var(--indent-8) var(--indent-16);
   border-radius: var(--indent-8);
+
+  &.disabled {
+    opacity: 0.8;
+  }
+
+  &:focus-within {
+    outline: 1px solid var(--color-accent)
+  }
 }
 
 .icon {
@@ -21,4 +29,8 @@
   border: none;
   outline: none;
   background-color: transparent;
+
+  &:disabled {
+    pointer-events: none;
+  }
 }

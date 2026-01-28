@@ -1,5 +1,6 @@
 .Header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   padding: var(--indent-16) var(--indent-24);
@@ -15,4 +16,17 @@
 .logo {
   font-size: var(--fs-2xl);
   font-weight: 600;
+}
+
+.right {
+  display: flex;
+  gap: var(--indent-12);
+}
+
+.users, .avatar {
+  padding: var(--indent-8);
+}
+
+.avatar {
+  color: var(--color-white);
 }

@@ -10,7 +10,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export function Input(props: Props) {
-	const { className = '', wrapperClass = '', label, isSearch = false, ...rest } = props;
+	const { className = '', wrapperClass = '', label, isSearch = false, disabled = false, ...rest } = props;
 
 	const inputId = rest.id ?? useId();
 
@@ -21,7 +21,7 @@ export function Input(props: Props) {
 				htmlFor={inputId}
 			>
 				<p>{label}</p>
-				<div className={classNames(s.wrapper, {}, [wrapperClass])}>
+				<div className={classNames(s.wrapper, { [s.disabled]: disabled }, [wrapperClass])}>
 					{isSearch && (
 						<Search
 							className={s.icon}
@@ -29,8 +29,9 @@ export function Input(props: Props) {
 						/>
 					)}
 					<input
-						className={classNames(s.Input, {}, [className])}
+						className={classNames(s.Input, { [s.disabled]: disabled }, [className])}
 						id={inputId}
+						disabled={disabled}
 						{...rest}
 					/>
 				</div>
@@ -48,6 +49,7 @@ export function Input(props: Props) {
 			)}
 			<input
 				className={classNames(s.Input, {}, [className])}
+				disabled={disabled}
 				{...rest}
 			/>
 		</div>
