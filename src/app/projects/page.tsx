@@ -3,6 +3,7 @@ import s from './page.module.scss';
 import { Button } from '@/shared/ui/Button';
 import { Plus } from 'lucide-react';
 import { Input } from '@/shared/ui/Input';
+import { ProjectsList } from '@/entities/Project';
 
 export default function Projects() {
 	return (
@@ -22,6 +23,7 @@ export default function Projects() {
 				wrapperClass={s.inputWrapper}
 				isSearch
 			/>
+			<ProjectsList />
 		</Page>
 	);
 }

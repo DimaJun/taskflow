@@ -1,0 +1,38 @@
+.Card {
+  cursor: pointer;
+  position: relative;
+  background-color: var(--color-white);
+  padding: var(--indent-24);
+  border-radius: var(--indent-12);
+  overflow: hidden;
+}
+
+.topBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--indent-8);
+  background-color: var(--color-accent);
+}
+
+.top {
+  position: relative;
+}
+
+.title {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  margin-bottom: var(--indent-4);
+}
+
+.description {
+  font-size: var(--fs-sm);
+  color: var(--color-secondary);
+}
+
+.actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
