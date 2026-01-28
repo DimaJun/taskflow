@@ -1,0 +1,10 @@
+@use "reset/reset";
+@use "variables/variables";
+
+body {
+  height: 100vh;
+  font-family: var(--font-inter);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  overflow: hidden;
+}
