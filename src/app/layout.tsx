@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './styles/globals.scss';
 import { ReactNode } from 'react';
+import { Header } from '@/widgets/Header';
 
 const inter = Inter({
 	variable: '--font-inter',
@@ -22,7 +23,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ru'>
-			<body className={`${inter.variable}`}>{children}</body>
+			<body className={`${inter.variable}`}>
+				<div className='app'>
+					<Header />
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }
