@@ -1,0 +1,39 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--indent-32) var(--indent-24);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: var(--indent-16);
+}
+
+.title {
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+}
+
+.description {
+  margin-top: var(--indent-4);
+  font-size: var(--fs-sm);
+  color: var(--color-secondary);
+}
+
+.createProject {
+  color: var(--color-white);
+  padding: var(--indent-8) var(--indent-16);
+}
+
+.inputWrapper {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-white);
+  outline: 1px solid var(--input-outline);
+
+  margin-bottom: var(--indent-16);
+}
