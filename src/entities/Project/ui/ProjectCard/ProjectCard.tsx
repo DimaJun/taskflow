@@ -1,6 +1,7 @@
 import s from './ProjectCard.module.scss';
 import { Button } from '@/shared/ui/Button';
-import { EllipsisVertical } from 'lucide-react';
+import { EllipsisVertical, Grid3x3, Users } from 'lucide-react';
+import { Progress } from '@/shared/ui/Progress';
 
 export function ProjectCard() {
 	return (
@@ -16,6 +17,27 @@ export function ProjectCard() {
 					<EllipsisVertical size={16} />
 				</Button>
 			</div>
+			<Progress
+				text='Прогресс'
+				value={67}
+			/>
+			<div className={s.info}>
+				<p className={s.boards}>
+					<Grid3x3
+						className={s.icon}
+						size={18}
+					/>
+					3 доски
+				</p>
+				<p className={s.participants}>
+					<Users
+						className={s.icon}
+						size={18}
+					/>
+					8 участников
+				</p>
+			</div>
+			<div className={s.divider} />
 		</div>
 	);
 }

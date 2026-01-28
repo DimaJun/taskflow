@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent-4);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: var(--fs-xs);
+}
+
+.text {
+  color: var(--progress-text);
+  font-weight: 500;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.track {
+  height: var(--indent-8);
+  background-color: var(--progress-track);
+  border-radius: var(--indent-36);
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+}
