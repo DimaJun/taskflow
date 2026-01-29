@@ -7,6 +7,7 @@ import { navItems } from '../consts/nav-items';
 import { Input } from '@/shared/ui/Input';
 import { Users } from 'lucide-react';
 import { Button } from '@/shared/ui/Button';
+import { Avatar } from '@/shared/ui/Avatar';
 
 export function Header() {
 	return (
@@ -31,7 +32,11 @@ export function Header() {
 				>
 					<Users size={18} />
 				</Button>
-				<Button className={s.avatar}>ВЫ</Button>
+				<Avatar
+					className={s.avatar}
+					size={34}
+					fullName={'Dima Rui'}
+				/>
 			</div>
 		</header>
 	);
