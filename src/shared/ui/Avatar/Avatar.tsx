@@ -11,7 +11,7 @@ interface Props {
 }
 
 export function Avatar(props: Props) {
-	const { className = '', src, fullName, rounded = false, size = 50 } = props;
+	const { className = '', src, fullName, rounded = false, size = 30 } = props;
 
 	const firstLetter = fullName.trim().split(/\s+/)[0]?.charAt(0)?.toUpperCase();
 

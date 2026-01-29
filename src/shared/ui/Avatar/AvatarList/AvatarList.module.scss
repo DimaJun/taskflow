@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  outline: 2px solid var(--color-white);
+  &:not(:first-child) {
+    margin-left: -6px;
+  }
+}
+
+.more {
+  margin-left: -6px;
+  color: var(--color-secondary);
+  background-color: var(--input-outline);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  outline: 2px solid var(--color-white);
+}
