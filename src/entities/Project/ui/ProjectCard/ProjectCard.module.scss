@@ -9,6 +9,11 @@
   display: flex;
   flex-direction: column;
   gap: var(--indent-24);
+  transition: var(--transition);
+
+  &:hover {
+    box-shadow: 0 4px 16px -6px #a0a0a0;
+  }
 }
 
 .topBorder {
