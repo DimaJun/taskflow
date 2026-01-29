@@ -1,5 +1,7 @@
 .list {
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--indent-16);
+  gap: var(--indent-24);
+  overflow-y: auto;
 }

@@ -7,6 +7,24 @@ export function ProjectsList() {
 			<li>
 				<ProjectCard />
 			</li>
+			<li>
+				<ProjectCard />
+			</li>
+			<li>
+				<ProjectCard />
+			</li>
+			<li>
+				<ProjectCard />
+			</li>
+			<li>
+				<ProjectCard />
+			</li>
+			<li>
+				<ProjectCard />
+			</li>
+			<li>
+				<ProjectCard />
+			</li>
 		</ul>
 	);
 }

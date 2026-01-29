@@ -1,8 +1,9 @@
 .projects {
   display: flex;
   flex-direction: column;
+  gap: var(--indent-16);
 
-  padding: var(--indent-32) var(--indent-24);
+  padding:var(--indent-24);
 }
 
 .top {
@@ -10,7 +11,6 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: var(--indent-16);
 }
 
 .title {
@@ -35,5 +35,4 @@
   background-color: var(--color-white);
   outline: 1px solid var(--input-outline);
 
-  margin-bottom: var(--indent-16);
 }
