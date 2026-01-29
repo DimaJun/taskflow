@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding: var(--indent-16) var(--indent-24);
+  background-color: var(--color-white);
+  border-block: 1px solid var(--input-outline);
+
+}
+
+.breadcrumbs, .item {
+  display: flex;
+  align-items: center;
+  gap: var(--indent-8);
+}
+
+.href {
+  transition: var(--transition);
+    color: var(--color-secondary);
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+.current {
+  font-weight: 500;
+}
