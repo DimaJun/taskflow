@@ -9,8 +9,9 @@ interface Props {
 export function TagsList({ items }: Props) {
 	return (
 		<ul className={s.list}>
-			{items.map(({ Icon, content }) => (
+			{items.map(({ Icon, content }, index) => (
 				<Tag
+					key={`tag-${content}-${index}`}
 					Icon={Icon}
 					content={content}
 				/>

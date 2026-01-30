@@ -19,7 +19,7 @@ export function Tag(props: Props) {
 
 	return (
 		<span className={classNames(s.Tag, {}, [className])}>
-			{Icon && <Icon size={18} />}
+			{Icon && <Icon size={16} />}
 			{content}
 		</span>
 	);

@@ -1,9 +1,8 @@
 .item {
   display: flex;
   align-items: center;
-  gap: var(--indent-8);
-  font-size: var(--fs-sm);
-
+  gap: var(--indent-4);
+  font-size: var(--fs-xs);
 }
 
 .icon {
@@ -17,7 +16,7 @@
 }
 
 .value {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .label {

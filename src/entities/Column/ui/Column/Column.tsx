@@ -1,6 +1,7 @@
 import s from './Column.module.scss';
 import { Button } from '@/shared/ui/Button';
 import { Plus } from 'lucide-react';
+import { Task } from '@/entities/Task';
 
 export function Column() {
 	return (
@@ -14,7 +15,12 @@ export function Column() {
 					<Plus size={18} />
 				</Button>
 			</div>
-			<div className={s.tasks}></div>
+			<div className={s.tasks}>
+				<Task />
+				<Task />
+				<Task />
+				<Task />
+			</div>
 		</div>
 	);
 }
