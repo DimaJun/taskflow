@@ -1,0 +1,15 @@
+.list {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: var(--indent-24);
+
+  display: flex;
+  gap: var(--indent-16);
+}
+
+.list li {
+  flex-basis: 250px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
