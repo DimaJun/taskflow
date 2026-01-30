@@ -1,0 +1,12 @@
+.Tag {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: var(--indent-4);
+  padding: var(--indent-4) var(--indent-8);
+  background-color: var(--input-bg);
+  color: var(--color-secondary);
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  border-radius: var(--indent-4);
+}
