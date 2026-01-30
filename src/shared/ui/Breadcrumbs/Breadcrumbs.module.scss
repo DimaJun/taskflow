@@ -13,8 +13,10 @@
 
 .href {
   transition: var(--transition);
-    color: var(--color-secondary);
+  color: var(--color-secondary);
+
   &:hover {
+    text-decoration: underline;
     color: var(--color-primary);
   }
 }
