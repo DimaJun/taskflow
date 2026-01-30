@@ -1,3 +1,9 @@
+import { BoardHeader } from '@/widgets/BoardHeader';
+
 export default function BoardPage() {
-	return <>board Page</>;
+	return (
+		<>
+			<BoardHeader />
+		</>
+	);
 }
