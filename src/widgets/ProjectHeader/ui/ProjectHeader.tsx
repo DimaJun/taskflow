@@ -2,6 +2,7 @@ import s from './ProjectHeader.module.scss';
 import { Avatar, AvatarList } from '@/shared/ui/Avatar';
 import { Users, Settings, Plus } from 'lucide-react';
 import { Button } from '@/shared/ui/Button';
+import { InfoItem } from '@/shared/ui/InfoItem';
 
 export function ProjectHeader() {
 	return (
@@ -16,13 +17,11 @@ export function ProjectHeader() {
 					<h1 className={s.title}>Разработка платформы</h1>
 					<p className={s.description}>Основной продуктовый проект компании</p>
 					<div className={s.bottom}>
-						<p className={s.participants}>
-							<Users
-								className={s.icon}
-								size={18}
-							/>{' '}
-							8 участников
-						</p>
+						<InfoItem
+							Icon={Users}
+							value={8}
+							label='участников'
+						/>
 						<AvatarList max={4} />
 					</div>
 				</div>
@@ -45,7 +44,7 @@ export function ProjectHeader() {
 					className={s.tab}
 					variant='clear'
 				>
-					Активные
+					Активные доски
 				</Button>
 				<Button
 					className={s.tab}

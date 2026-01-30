@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--indent-8);
+  font-size: var(--fs-sm);
+
+}
+
+.icon {
+  color: var(--color-secondary);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: var(--indent-4);
+}
+
+.value {
+  font-weight: 600;
+}
+
+.label {
+  font-weight: 300;
+}

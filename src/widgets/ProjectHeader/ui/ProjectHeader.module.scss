@@ -16,17 +16,6 @@
     align-items: center;
     gap: var(--indent-16);
   }
-
-  .participants {
-    display: flex;
-    align-items: center;
-    gap: var(--indent-8);
-    font-size: var(--fs-sm);
-
-    .icon {
-      color: var(--color-secondary);
-    }
-  }
 }
 
 .title {
@@ -63,7 +52,7 @@
 }
 
 .tabs {
-  padding: var(--indent-24) var(--indent-24) 0 var(--indent-24);
+  padding: 0 var(--indent-24);
   display: flex;
   gap: var(--indent-24);
 }

@@ -3,6 +3,7 @@ import { Button } from '@/shared/ui/Button';
 import { EllipsisVertical, Grid3x3, Users, Calendar } from 'lucide-react';
 import { Progress } from '@/shared/ui/Progress';
 import { AvatarList } from '@/shared/ui/Avatar';
+import { InfoItem } from '@/shared/ui/InfoItem';
 
 export function ProjectCard() {
 	return (
@@ -23,30 +24,24 @@ export function ProjectCard() {
 				value={67}
 			/>
 			<div className={s.info}>
-				<p className={s.boards}>
-					<Grid3x3
-						className={s.icon}
-						size={18}
-					/>
-					3 доски
-				</p>
-				<p className={s.participants}>
-					<Users
-						className={s.icon}
-						size={18}
-					/>
-					8 участников
-				</p>
+				<InfoItem
+					value={3}
+					Icon={Grid3x3}
+					label='доски'
+				/>
+				<InfoItem
+					value={8}
+					Icon={Users}
+					label='участников'
+				/>
 			</div>
 			<div className={s.divider} />
 			<div className={s.bottom}>
-				<p className={s.activity}>
-					<Calendar
-						className={s.icon}
-						size={18}
-					/>
-					2 часа назад
-				</p>
+				<InfoItem
+					value={2}
+					Icon={Calendar}
+					label='часа назад'
+				/>
 				<AvatarList />
 			</div>
 		</div>
