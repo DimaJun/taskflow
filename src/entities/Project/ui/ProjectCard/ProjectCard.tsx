@@ -4,33 +4,6 @@ import { EllipsisVertical, Grid3x3, Users, Calendar } from 'lucide-react';
 import { Progress } from '@/shared/ui/Progress';
 import { AvatarList } from '@/shared/ui/Avatar';
 
-const mockUsers = [
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Anna Maria',
-	},
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Eva Maria',
-	},
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Dima Gang',
-	},
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Guf Alexey',
-	},
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Vlad Koval',
-	},
-	{
-		id: crypto.randomUUID(),
-		fullName: 'Yurii Gaf',
-	},
-];
-
 export function ProjectCard() {
 	return (
 		<div className={s.Card}>
@@ -74,7 +47,7 @@ export function ProjectCard() {
 					/>
 					2 часа назад
 				</p>
-				<AvatarList users={mockUsers} />
+				<AvatarList />
 			</div>
 		</div>
 	);

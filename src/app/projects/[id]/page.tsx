@@ -1,3 +1,9 @@
+import { ProjectHeader } from '@/widgets/ProjectHeader';
+
 export default function Project() {
-	return <div>Current Project</div>;
+	return (
+		<div>
+			<ProjectHeader />
+		</div>
+	);
 }

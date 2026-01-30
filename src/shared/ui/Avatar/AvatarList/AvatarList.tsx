@@ -1,6 +1,33 @@
 import s from './AvatarList.module.scss';
 import { Avatar } from '@/shared/ui/Avatar';
 
+const mockUsers: User[] = [
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Anna Maria',
+	},
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Eva Maria',
+	},
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Dima Gang',
+	},
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Guf Alexey',
+	},
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Vlad Koval',
+	},
+	{
+		id: crypto.randomUUID(),
+		fullName: 'Yurii Gaf',
+	},
+];
+
 interface User {
 	id: string;
 	fullName: string;
@@ -8,13 +35,13 @@ interface User {
 }
 
 interface Props {
-	users: User[];
+	users?: User[];
 	max?: number;
 	size?: number;
 }
 
 export function AvatarList(props: Props) {
-	const { users, max = 3, size = 30 } = props;
+	const { users = mockUsers, max = 3, size = 30 } = props;
 
 	const visibleUsers = users.slice(0, max);
 	const rest = users.length - max;
