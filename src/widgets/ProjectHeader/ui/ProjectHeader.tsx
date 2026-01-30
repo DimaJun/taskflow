@@ -40,6 +40,20 @@ export function ProjectHeader() {
 					</Button>
 				</div>
 			</div>
+			<div className={s.tabs}>
+				<Button
+					className={s.tab}
+					variant='clear'
+				>
+					Активные
+				</Button>
+				<Button
+					className={s.tab}
+					variant='clear'
+				>
+					Архив
+				</Button>
+			</div>
 		</div>
 	);
 }
