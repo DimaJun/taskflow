@@ -1,1 +1,1 @@
-export { BoardCard } from './ui/BoardCard/BoardCard';
+export { BoardsList } from './ui/BoardsList/BoardsList';
