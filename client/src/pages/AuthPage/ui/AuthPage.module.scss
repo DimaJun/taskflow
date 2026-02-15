@@ -11,8 +11,51 @@
 	font-weight: 700;
 }
 
-.description {
+.description,
+.formDescription {
 	font-size: var(--fs-sm);
 	color: var(--text-secondary);
 	margin-top: var(--indent-4);
+}
+
+.formWrapper {
+	min-width: 300px;
+	max-width: 500px;
+	width: 100%;
+	padding: var(--indent-32);
+	background-color: var(--color-white);
+	border: 1px solid var(--slate-200);
+	border-radius: var(--indent-16);
+
+	margin-top: var(--indent-32);
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--indent-20);
+}
+
+.formHeading {
+	font-weight: 700;
+	font-size: var(--fs-2xl);
+}
+
+.send {
+	width: 100%;
+	padding-block: var(--indent-12);
+	border-radius: var(--indent-8);
+	font-size: var(--fs-sm);
+	font-weight: 600;
+}
+
+.hint {
+	text-align: center;
+	font-size: var(--fs-sm);
+	color: var(--text-secondary);
+
+	.switch {
+		margin-left: var(--indent-6);
+		font-size: var(--fs-sm);
+		color: var(--blue-700);
+		font-weight: 500;
+	}
 }

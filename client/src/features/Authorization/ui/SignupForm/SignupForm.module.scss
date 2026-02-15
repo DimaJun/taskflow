@@ -1,0 +1,23 @@
+.form {
+	display: grid;
+	gap: var(--indent-12);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas:
+		'firstName lastName'
+		'email email'
+		'password password';
+}
+
+.input.firstName {
+	grid-area: firstName;
+}
+.input.lastName {
+	grid-area: lastName;
+}
+.input.email {
+	grid-area: email;
+}
+.input.password {
+	grid-area: password;
+}

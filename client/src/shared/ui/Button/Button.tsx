@@ -22,7 +22,7 @@ export function Button(props: Props) {
 
 	return (
 		<button
-			className={classNames(s.Button, {}, [className, variantClass])}
+			className={classNames(s.Button, {}, [variantClass, className])}
 			{...rest}
 		>
 			{children}

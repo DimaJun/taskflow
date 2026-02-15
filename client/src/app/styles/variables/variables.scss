@@ -1,4 +1,6 @@
 :root {
+	--transition: 0.2s;
+
 	/* Base text */
 	--fs-xs: 12px; /* подписи, helper text */
 	--fs-sm: 14px; /* вторичный текст */
@@ -15,8 +17,17 @@
 
 	// Colors
 	--app-bg: #f8fafc;
+	--color-primary: #2563eb;
 	--text-primary: #0f172a;
 	--text-secondary: #64748b;
+	--color-white: #ffffff;
+	--slate-200: #e2e8f0;
+	--slate-400: #94a3b8;
+	--slate-700: #334155;
+
+	--blue-500: #3b82f6;
+	--blue-700: #1d4ed8;
+	--blue-800: #1e40af;
 
 	// Indents
 	--indent-2: 2px;
@@ -30,4 +41,7 @@
 	--indent-24: 24px;
 	--indent-28: 28px;
 	--indent-32: 32px;
+
+	// shadows
+	--shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }

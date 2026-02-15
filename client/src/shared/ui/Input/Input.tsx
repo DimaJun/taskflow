@@ -6,13 +6,14 @@ import { classNames } from '@/shared/helpers';
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
 	Icon?: LucideIcon;
 	label?: string;
+	wrapperClass?: string;
 }
 
 export function Input(props: Props) {
-	const { Icon, label, className = '', ...rest } = props;
+	const { Icon, label, className = '', wrapperClass = '', ...rest } = props;
 
 	return (
-		<label className={s.wrapper}>
+		<label className={classNames(s.wrapper, {}, [wrapperClass])}>
 			{label && <p className={s.label}>{label}</p>}
 
 			<div className={s.inputWrapper}>

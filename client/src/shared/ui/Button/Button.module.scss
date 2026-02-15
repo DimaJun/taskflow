@@ -1,0 +1,23 @@
+.Button {
+	cursor: pointer;
+	border: 0;
+	transition: var(--transition);
+}
+
+.clear {
+	background-color: transparent;
+	color: var(--text-primary);
+}
+
+.default {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+
+	&:hover {
+		background-color: var(--blue-700);
+	}
+
+	&:active {
+		background-color: var(--blue-800);
+	}
+}

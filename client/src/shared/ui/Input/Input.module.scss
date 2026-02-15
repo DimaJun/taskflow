@@ -1,0 +1,35 @@
+.inputWrapper {
+	padding: var(--indent-12);
+	display: flex;
+	align-items: center;
+	gap: var(--indent-12);
+	outline: 1px solid var(--slate-200);
+	border-radius: var(--indent-8);
+	transition: var(--transition);
+
+	&:focus-within {
+		outline: 2px solid var(--blue-500);
+	}
+}
+
+.icon {
+	color: var(--slate-400);
+}
+
+.Input {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	font-size: var(--fs-sm);
+
+	&::placeholder {
+		color: var(--slate-400);
+	}
+}
+
+.label {
+	color: var(--slate-700);
+	margin-bottom: var(--indent-6);
+	font-weight: 500;
+	font-size: var(--fs-sm);
+}

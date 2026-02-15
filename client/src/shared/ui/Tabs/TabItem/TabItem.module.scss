@@ -1,0 +1,18 @@
+.Tab {
+	color: var(--text-secondary);
+	font-size: var(--fs-sm);
+	font-weight: 500;
+	padding: var(--indent-10);
+	transition: var(--transition);
+	border-radius: var(--indent-8);
+
+	&:hover {
+		color: #334155;
+	}
+}
+
+.Tab.active {
+	background-color: var(--color-white);
+	color: var(--text-primary);
+	box-shadow: var(--shadow-sm);
+}
