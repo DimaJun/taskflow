@@ -1,0 +1,18 @@
+.Auth {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.title {
+	font-size: var(--fs-3xl);
+	font-weight: 700;
+}
+
+.description {
+	font-size: var(--fs-sm);
+	color: var(--text-secondary);
+	margin-top: var(--indent-4);
+}

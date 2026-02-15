@@ -1,1 +1,8 @@
 @use 'reset';
+@use 'variables/variables';
+
+.app {
+	height: 100vh;
+	font-family: var(--font-inter);
+	color: var(--text-primary);
+}

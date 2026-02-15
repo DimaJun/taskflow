@@ -1,0 +1,33 @@
+:root {
+	/* Base text */
+	--fs-xs: 12px; /* подписи, helper text */
+	--fs-sm: 14px; /* вторичный текст */
+	--fs-md: 16px; /* основной текст */
+	--fs-lg: 18px; /* акцентный текст */
+	--fs-xl: 20px; /* маленькие заголовки */
+
+	/* Headings */
+	--fs-2xl: 24px;
+	--fs-3xl: 30px;
+	--fs-4xl: 36px;
+	--fs-5xl: 48px;
+	--fs-6xl: 60px;
+
+	// Colors
+	--app-bg: #f8fafc;
+	--text-primary: #0f172a;
+	--text-secondary: #64748b;
+
+	// Indents
+	--indent-2: 2px;
+	--indent-4: 4px;
+	--indent-6: 6px;
+	--indent-8: 8px;
+	--indent-10: 10px;
+	--indent-12: 12px;
+	--indent-16: 16px;
+	--indent-20: 20px;
+	--indent-24: 24px;
+	--indent-28: 28px;
+	--indent-32: 32px;
+}
