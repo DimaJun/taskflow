@@ -29,12 +29,6 @@ export function AuthPage() {
 					<p className={s.formDescription}>Введите данные для входа в систему</p>
 				</div>
 				{activeTab === 'login' ? <SigninForm /> : <SignupForm />}
-				<Button
-					className={s.send}
-					variant='default'
-				>
-					{activeTab === 'login' ? 'Войти' : 'Создать аккаунт'}
-				</Button>
 				<p className={s.hint}>
 					{activeTab === 'login' ? 'Нет аккаунта?' : 'Уже есть аккаунт?'}
 					<Button

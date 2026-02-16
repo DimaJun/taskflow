@@ -6,7 +6,8 @@
 	grid-template-areas:
 		'firstName lastName'
 		'email email'
-		'password password';
+		'password password'
+		'create create';
 }
 
 .input.firstName {
@@ -20,4 +21,13 @@
 }
 .input.password {
 	grid-area: password;
+}
+
+.send {
+	grid-area: create;
+	width: 100%;
+	padding-block: var(--indent-12);
+	border-radius: var(--indent-8);
+	font-size: var(--fs-sm);
+	font-weight: 600;
 }

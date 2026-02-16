@@ -3,3 +3,11 @@
 	flex-direction: column;
 	gap: var(--indent-12);
 }
+
+.send {
+	width: 100%;
+	padding-block: var(--indent-12);
+	border-radius: var(--indent-8);
+	font-size: var(--fs-sm);
+	font-weight: 600;
+}
