@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Inter } from 'next/font/google';
 import './styles/globals.scss';
 import { ReactNode } from 'react';
+import { StoreProvider } from '@/app/providers/store';
 
 const inter = Inter({
 	variable: '--font-inter',
@@ -25,7 +26,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.variable} ${montserrat.variable} app`}>{children}</body>
+			<body className={`${inter.variable} ${montserrat.variable} app`}>
+				<StoreProvider>{children}</StoreProvider>
+			</body>
 		</html>
 	);
 }
