@@ -1,9 +1,5 @@
-import { AuthPage } from '@/pages/AuthPage';
+import { HomePage } from '@/pages/HomePage';
 
 export default function Home() {
-	return (
-		<>
-			<AuthPage />
-		</>
-	);
+	return <HomePage />;
 }
